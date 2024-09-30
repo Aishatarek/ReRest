@@ -1,9 +1,28 @@
-
-  {
-    "rewrites": [
-      {"source": "/admin/", "destination": "https://rerest-dash.vercel.app/"},
-      {"source": "/admin/:match*", "destination": "https://rerest-dash.vercel.app/:match*"},
-      {"source": "/", "destination": "https://re-rest.vercel.app/"},
-      {"source": "/:match*", "destination": "https://re-rest.vercel.app/:match*"}
-    ]
-  }
+{
+  "rewrites": [
+    {
+      "source": "/admin/:path*",
+      "destination": "https://rerest-dash.vercel.app/:path*"
+    },
+    {
+      "source": "/admin/",
+      "destination": "https://rerest-dash.vercel.app/"
+    },
+    {
+      "source": "/admin/:match*",
+      "destination": "https://rerest-dash.vercel.app/:match*"
+    },
+    {
+      "source": "/",
+      "destination": "https://re-rest.vercel.app/"
+    },
+    {
+      "source": "/:match*",
+      "destination": "https://re-rest.vercel.app/:match*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
