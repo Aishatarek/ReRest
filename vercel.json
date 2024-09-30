@@ -9,6 +9,10 @@
       "destination": "https://rerest-dash.vercel.app/"
     },
     {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    },
+    {
       "source": "/",
       "destination": "https://re-rest.vercel.app/"
     },
@@ -23,10 +27,7 @@
     {
       "source": "/index.html",
       "destination": "/index.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
+   
   ]
 }
