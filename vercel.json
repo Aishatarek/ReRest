@@ -17,6 +17,10 @@
       "destination": "https://re-rest.vercel.app/:match*"
     },
     {
+      "source": "/:path*",
+      "destination": "https://re-rest.vercel.app/:path*"
+    },
+    {
       "source": "/index.html",
       "destination": "/index.html"
     },
