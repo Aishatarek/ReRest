@@ -5,12 +5,8 @@
       "destination": "https://rerest-dash.vercel.app/:path*"
     },
     {
-      "source": "/admin/",
+      "source": "/admin",
       "destination": "https://rerest-dash.vercel.app/"
-    },
-    {
-      "source": "/admin/:match*",
-      "destination": "https://rerest-dash.vercel.app/:match*"
     },
     {
       "source": "/",
@@ -19,6 +15,10 @@
     {
       "source": "/:match*",
       "destination": "https://re-rest.vercel.app/:match*"
+    },
+    {
+      "source": "/index.html",
+      "destination": "/index.html"
     },
     {
       "source": "/(.*)",
