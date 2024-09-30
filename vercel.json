@@ -1,1 +1,13 @@
-{ "rewrites": [ { "source": "/(.*)", "destination": "/index.html" } ] }
+{
+    "rewrites": [
+      {
+        "source": "/admin/:path*",
+        "destination": "https://rerest-dash.vercel.app/:path*"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
+  
